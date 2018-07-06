@@ -1,0 +1,41 @@
+version: '2.0'
+ 
+services:
+    ex1:
+        build:
+            context:  ./ex1
+            dockerfile: Dockerfile
+        ports:
+            - "8000:80"
+
+    ex2:
+        build:
+            context:  ./ex2
+            dockerfile: Dockerfile
+        ports:
+            - "5000:80"
+        links:
+            - php-nginx-1
+            - php-nginx-2
+            - php-nginx-3
+
+    php-nginx-1:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+             - "9000"
+
+    php-nginx-2:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "9000"
+
+    php-nginx-3:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+             - "9000"
