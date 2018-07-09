@@ -9,6 +9,8 @@ Least connection
 ### in /serverWeb/ex2/blog
 - composer install
 - composer dump-autoload -o
+- mv .env.example .env
+- php artisan key:generate
 
 ### in /serverWeb
 - docker-compose up --build
