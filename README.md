@@ -5,7 +5,13 @@ Desgardin Bérenger
 Least connection
 
 ##How to launch
-sudo docker-compose up --build
+
+### in /serverWeb/ex2/blog
+- composer install
+- composer dump-autoload
+
+### in /serverWeb
+- sudo docker-compose up --build
 
 
 ##Essais
