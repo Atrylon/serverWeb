@@ -15,6 +15,8 @@ Least connection
 ### in /serverWeb
 - docker-compose up --build
 
+(Certainement beaucoup plus propre à faire mais manque de temps sur la fin)
+
 
 # Essais
 - Tentative de deploy/installation du Laravel via Dockerfile échouées : blocage du build du docker-compose au moment du php artisan serve (voir Dockerfile_old).
