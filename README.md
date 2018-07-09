@@ -8,10 +8,10 @@ Least connection
 
 ### in /serverWeb/ex2/blog
 - composer install
-- composer dump-autoload
+- composer dump-autoload -o
 
 ### in /serverWeb
-- sudo docker-compose up --build
+- docker-compose up --build
 
 
 # Essais
