@@ -1,10 +1,10 @@
-###Author
+### Author
 Desgardin Bérenger
 
-###Load Balancing Strategy
+### Load Balancing Strategy
 Least connection
 
-###How to launch
+### How to launch
 
 ## in /serverWeb/ex2/blog
 - composer install
@@ -14,7 +14,7 @@ Least connection
 - sudo docker-compose up --build
 
 
-###Essais
+### Essais
 - Tentative de deploy/installation du Laravel via Dockerfile échouées : blocage du build du docker-compose au moment du php artisan serve (voir Dockerfile_old).
 => Copie des fichiers dans le projet puis via le dockerFile. OK
 
